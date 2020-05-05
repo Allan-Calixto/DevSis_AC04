@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    position: relative;
+    font-size: 16px;
+    background: #F2F2F2;
+    max-width: 500px;
+    margin: 120px auto;
+    padding: 0 10px 10px 10px;
+}
+
+h1{
+    color: #333
+}
+
+input, textarea{
+    width: 470px;
+    padding: 2px;
+}
+
+.enviar input{
+    background-color: #069;
+    height: 40px;
+    width: 150px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid;
+    color: #F2F2F2;
+    cursor: pointer;
+    
+}
+.enviar input:hover{
+    background: #00BFFF;
+}
+
+.contato {
+    width: 470px;
+    padding: 10px;
+    color: #333;
+    font-size: 16px;
+}

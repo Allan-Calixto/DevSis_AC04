@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="./css/estilo.css" >
+    <link rel="stylesheet" type="text/css" href="../CSS/slick"/>
+    <link rel="stylesheet" type="text/css" href="./css/contato.css"/>
+    <script type="text/javascript" src='contato.js'></script>
+    
+    <title>Contato</title>
+
+</head>
+<body>
+
+
+     <header class="menun-principal">
+        <main>
+            <div class="header1">
+                <div class="logo">
+                    <img src="img\logo.jpg" width=160 height=60/>
+                </div>
+                                
+            </div>
+                
+        </main>
+    </header>
+    <main class="col-100 menu-urls">
+        <div class="header2">
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Cursos.html">Curso</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="busca">
+                <input placeholder="Buscar" type="text"/>
+
+            </div>
+        </div>
+    </main>
+    <form name='formteste' action='' method='post'>
+        <h1>Contato</h1>
+
+        <p class='nome'>
+            <input type='text' name='Nome' placeholder='Informe seu nome' required='required'>
+        </p>
+        <p class='email'>
+            <input type='email' name='email' placeholder='Informe seu e-mail' required='riquired'>
+        </p>
+        <div class='contato'>
+            <label for=''> Informe o assunto</label>
+            <select required='required' name='assunto'>
+                <option selected='selected' value=''>Selecione</option>
+                <option value='1'>Atendimento</option>
+                <option value='2'>Secretária</option>
+                <option value='3'>Financeiro</option>
+                <option value='4'>Ouvidoria</option>
+            </select>
+            
+        </div>
+               
+        <p class='mensagem'>
+            <textarea name='mensagem' placeholder='Informe sua mensagem'></textarea>
+        </p>
+
+        <p class='enviar'> 
+
+            <input type='submit' name='enviar' value='Enviar' onclick='enviar()'/>
+                            
+        </p>
+
+    
+    
+    
+    </form>
+
+
+     
+
+
+<footer>
+    <div class="col-100 footer">
+        <div class="content">
+            <div class="col-4">
+                <h3><b>Desenvolvimento de Sistema</b></h3>
+                
+                
+    </div>
+    <div class="col-100 footer-2">
+    <div class="content">
+
+        <p>
+            Site criado para aula de desenvolvimento de sistemas, AC04 Turma de Banco de Dados
+        </p>
+    </div>
+</div>
+</footer>
+</body>
+</html>
