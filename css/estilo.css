@@ -250,3 +250,23 @@ h3 {
     text-align: center;
     padding: 20px;
 }
+ .html{
+    display: block;
+    margin-left: 500px;
+}
+
+.text-html p{
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    font-family: Arial;
+  
+}
+.titulo-html p{
+    text-align: center;
+    font-size: larger;
+    font-family: Arial;
+    padding: 20px;
+    color: rgb(240, 9, 9);
+    
+}
