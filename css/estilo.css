@@ -263,7 +263,7 @@ h3 {
     font-family: Arial;
   
 }
-.titulo-html p{
+.titulo-html h2{
     text-align: center;
     font-size: larger;
     font-family: Arial;
@@ -271,3 +271,25 @@ h3 {
     color: rgb(240, 9, 9);
     
 }
+/** Editando pagina Java**/
+.Java_logo{
+    display: block;
+    margin-left: 520px;
+}
+
+.Java_texto p{
+    text-align: center;
+    padding: 20px;
+    font-style: italic;
+    font-family: Arial;
+  
+}
+.titulo-java h2{
+    text-align: center;
+    font-size: larger;
+    font-family: Arial;
+    padding: 20px;
+    color: rgb(240, 9, 9);
+    
+}
+
