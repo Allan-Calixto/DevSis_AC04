@@ -32,54 +32,6 @@ ul {
     margin-left: 15px;
     height: 50px;
 }
-.menu ul li{
-    display: inline-block;
-    color: #8b8b8b;
-    margin-left: 15px;
-    height: 50px;
-}
-.menu ul li{
-    display: inline-block;
-    color: #8b8b8b;
-    margin-left: 15px;
-    height: 50px;
-}
-.menu ul li{
-    display: inline-block;
-    color: #8b8b8b;
-    margin-left: 15px;
-    height: 50px;
-}
-.menu ul li{
-    display: inline-block;
-    color: #8b8b8b;
-    margin-left: 15px;
-    height: 50px;
-}
-.menu ul li{
-    display: inline-block;
-    color: #8b8b8b;
-    margin-left: 15px;
-    height: 50px;
-}
-.menu ul li{
-    display: inline-block;
-    color: #8b8b8b;
-    margin-left: 15px;
-    height: 50px;
-}
-.menu ul li{
-    display: inline-block;
-    color: #8b8b8b;
-    margin-left: 15px;
-    height: 50px;
-}
-.menu ul li{
-    display: inline-block;
-    color: #8b8b8b;
-    margin-left: 15px;
-    height: 50px;
-}
 
 .menu ul li a:hover{
     color: #00bac6;
@@ -293,3 +245,30 @@ h3 {
     
 }
 
+/**Página Python**/
+
+.logo_python{
+    display: block;
+    margin-left:470px;
+    padding-top: 10%;
+}
+
+.text_python{
+    padding: 10px;
+    font-style: italic;
+    font-family: Arial;
+}
+
+.title_python{
+    text-align: center;
+    font-size: larger;
+    font-family: Arial;
+    padding: 10px;
+    color: rgb(31, 9, 228)
+}
+
+.icon{
+    width: 15px;
+    height: 15px;
+    padding-right: 1%;
+}
