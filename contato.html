@@ -8,6 +8,45 @@
     <link rel="stylesheet" type="text/css" href="../CSS/slick"/>
     <link rel="stylesheet" type="text/css" href="./css/contato.css"/>
     <script type="text/javascript" src='contato.js'></script>
+    <script type="text/javascript">
+        function validar(){
+            var nome = formteste.nome.value;
+            var email = formteste.email.value;
+            var assunto = formteste.assunto.value;
+            var mensagem = formteste.mensagem.value;
+
+            if(nome == ''){
+
+                alert('Preencha o campo Nome.');
+                formteste.nome.focus();
+                return False;
+            }
+
+            if(email == ''){
+
+                alert('Preencha o campo E-mail.');
+                formteste.email.focus();
+                return False;
+            }
+
+            if(assunto == ''){
+
+                alert('Preencha o campo Assunto.');
+                formteste.assunto.focus();
+                return False;
+            }
+
+            if(mensagem == ''){
+
+                alert('Preencha o campo Mensagem.');
+                formteste.mensagem.focus();
+                return False;
+            }
+
+        }
+
+
+    </script>
     
     <title>Contato</title>
 
@@ -45,14 +84,14 @@
         <h1>Contato</h1>
 
         <p class='nome'>
-            <input type='text' name='Nome' placeholder='Informe seu nome' required='required'>
+            <input type='text' name='nome' placeholder='Informe seu nome' >
         </p>
         <p class='email'>
-            <input type='email' name='email' placeholder='Informe seu e-mail' required='riquired'>
+            <input type='email' name='email' placeholder='Informe seu e-mail'>
         </p>
         <div class='contato'>
             <label for=''> Informe o assunto</label>
-            <select required='required' name='assunto'>
+            <select name='assunto'>
                 <option selected='selected' value=''>Selecione</option>
                 <option value='1'>Atendimento</option>
                 <option value='2'>Secretária</option>
@@ -68,7 +107,7 @@
 
         <p class='enviar'> 
 
-            <input type='submit' name='enviar' value='Enviar' onclick='enviar()'/>
+          <input type='submit' name='enviar' value='Enviar' onclick='return validar()'/>
                             
         </p>
 
