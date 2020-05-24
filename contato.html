@@ -15,34 +15,13 @@
             var assunto = formteste.assunto.value;
             var mensagem = formteste.mensagem.value;
 
-            if(nome == ''){
-
-                alert('Preencha o campo Nome.');
-                formteste.nome.focus();
+            if(nome == '' || email == '' || assunto == '' || mensagem == ''){
+                alert('Por favor, preencha todos os campos.')
                 return False;
             }
-
-            if(email == ''){
-
-                alert('Preencha o campo E-mail.');
-                formteste.email.focus();
-                return False;
+            else{
+                alert('Envio realizado com sucesso!')
             }
-
-            if(assunto == ''){
-
-                alert('Preencha o campo Assunto.');
-                formteste.assunto.focus();
-                return False;
-            }
-
-            if(mensagem == ''){
-
-                alert('Preencha o campo Mensagem.');
-                formteste.mensagem.focus();
-                return False;
-            }
-
         }
 
 
