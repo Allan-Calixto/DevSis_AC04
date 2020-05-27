@@ -1,47 +1,58 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
-   <head>
-      <meta charset="UTF-8">
-      <title>Python</title>
-      <link rel="stylesheet" type="text/css" href="./css/estilo.css" >
-      <link rel="stylesheet" type="text/css" href="../css/slick"/>
-   </head>
-   <body>
-      <header class="menun-principal">
-         <main>
+<head>
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="{%static 'css\estilo.css'%}">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/slick.css'%}"/>
+
+    <title>Python</title>
+
+</head>
+<body>
+
+     <header class="menun-principal">
+        <main>
             <div class="header1">
-               <div class="logo">
-                  <a href="index.html"><img src="img\logo.jpg" width=160 height=60/></a>
-               </div>
+                <div class="logo">
+                     <a href="{%url 'inicio'%}"><img src='{%static 'img/logo.jpg'%}' width=160 height=60/></a>
+                </div>
+                                
             </div>
-         </main>
-      </header>
-      <main class="col-100 menu-urls">
-         <div class="header2">
+                
+        </main>
+    </header>
+    <main class="col-100 menu-urls">
+        <div class="header2">
             <div class="menu">
-               <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="Cursos.html">Curso</a></li>
-                  <li><a href="contato.html">Contato</a></li>
-               </ul>
+                <ul>
+                    <li><a href="{% url 'inicio'%}">Home</a></li>
+                    <li><a href="{% url 'curso'%}">Curso</a></li>
+                    <li><a href="{% url 'contato'%}">Contato</a></li>
+                    <li><a href="{% url 'grafico'%}">Resultados</a></li>
+                </ul>
             </div>
             <div class="busca">
-               <input placeholder="Buscar" type="text"/>
+                <input placeholder="Buscar" type="text"/>
+
             </div>
-         </div>
-      </main>
+        </div>
+    </main>
       <div class="logo_python">
-         <img src="img\p2.png"/>
+         <img src="{%static 'img/p2.png'%}"/>
       </div>
       <div class="title_python">
          <h2>Curso de Python</h2>
       </div>
       <div class="text_python">
       <strong><h3>O que você aprenderá</h3></strong>
-      <p><img class="icon" src="img\py.png"/>Você será capaz de criar programas sofisticados com a linguagem Python.</p>
-      <p><img class="icon" src="img\py.png"/>Você será capaz de se tornar um especialista em inteligência artificial utilizando Python.</p>
-      <p><img class="icon" src="img\py.png"/>Você será capaz de se tornar um cientista de dados utilizando Python.</p>
-      <p><img class="icon" src="img\py.png"/>Você será capaz de se tornar um especialista em programação web com algum framework Python.</p>
+      <p><img class="icon" src="{%static 'img/py.png'%}"/>Você será capaz de criar programas sofisticados com a linguagem Python.</p>
+      <p><img class="icon" src="{%static 'img/py.png'%}"/>Você será capaz de se tornar um especialista em inteligência artificial utilizando Python.</p>
+      <p><img class="icon" src="{%static 'img/py.png'%}"/>Você será capaz de se tornar um cientista de dados utilizando Python.</p>
+      <p><img class="icon" src="{%static 'img/py.png'%}"/>Você será capaz de se tornar um especialista em programação web com algum framework Python.</p>
       
       <strong><h3>Requisitos</h3></strong>
       <ol>
@@ -73,7 +84,7 @@
          - E muito mais!</br>
       </p>
       <p>Não deixe a oportunidade passar mais uma vez. Sua hora de aprender Python chegou!</p>
-      <img src="img\avaliacao.jpg"/>
+      <img src="{%static 'img/avaliacao.jpg'%}"/>
       <footer>
          <div class="col-100 footer">
          <div class="content">

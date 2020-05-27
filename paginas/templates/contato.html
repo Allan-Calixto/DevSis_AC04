@@ -1,13 +1,15 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
 
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" type="text/css" href="./css/estilo.css" >
-    <link rel="stylesheet" type="text/css" href="../CSS/slick"/>
-    <link rel="stylesheet" type="text/css" href="./css/contato.css"/>
-    <script type="text/javascript" src='contato.js'></script>
+    <link rel="stylesheet" href="{%static 'css\estilo.css'%}">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/slick.css'%}"/>
+    <link rel="stylesheet" type="text/css" href="{%static 'css/contato.css'%}"/>
+    <script type="text/javascript" src="{%static 'js/contato.js'%}"></script>
     <script type="text/javascript">
         function validar(){
             var nome = formteste.nome.value;
@@ -37,7 +39,7 @@
         <main>
             <div class="header1">
                 <div class="logo">
-                     <a href="index.html"><img src="img\logo.jpg" width=160 height=60/></a>
+                     <a href="{%url 'inicio'%}"><img src='{%static 'img/logo.jpg'%}' width=160 height=60/></a>
                 </div>
                                 
             </div>
@@ -48,9 +50,10 @@
         <div class="header2">
             <div class="menu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Cursos.html">Curso</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="{% url 'inicio'%}">Home</a></li>
+                    <li><a href="{% url 'curso'%}">Curso</a></li>
+                    <li><a href="{% url 'contato'%}">Contato</a></li>
+                    <li><a href="{% url 'grafico'%}">Resultados</a></li>
                 </ul>
             </div>
             <div class="busca">
@@ -109,7 +112,7 @@
     </div>
     <div class="col-100 footer-2">
     <div class="content">
-
+       
         <p>
             Site criado para aula de desenvolvimento de sistemas - AC04 Turma de Banco de Dados
         </p>

@@ -1,0 +1,76 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="{%static 'css\estilo.css'%}">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/slick.css'%}"/>
+     <script src="{%static 'bootstrap.min.js'%}"></script>
+
+    <title>Gráfico</title>
+
+</head>
+<body>
+
+     <header class="menun-principal">
+        <main>
+            <div class="header1">
+                <div class="logo">
+                     <a href="{%url 'inicio'%}"><img src='{%static 'img/logo.jpg'%}' width=160 height=60/></a>
+                </div>
+                                
+            </div>
+                
+        </main>
+    </header>
+    <main class="col-100 menu-urls">
+        <div class="header2">
+            <div class="menu">
+                <ul>
+                    <li><a href="{% url 'inicio'%}">Home</a></li>
+                    <li><a href="{% url 'curso'%}">Curso</a></li>
+                    <li><a href="{% url 'contato'%}">Contato</a></li>
+                    <li><a href="{% url 'grafico'%}">Resultados</a></li>
+                </ul>
+            </div>
+            <div class="busca">
+                <input placeholder="Buscar" type="text"/>
+
+            </div>
+        </div>
+    </main>
+
+
+    <script type="text/javascript" src="https://ssl.gstatic.com/trends_nrtr/2213_RC01/embed_loader.js"></script> 
+    <script type="text/javascript"> trends.embed.renderExploreWidget("TIMESERIES", {"comparisonItem":[{"keyword":"python","geo":"BR","time":"today 12-m"},{"keyword":"html","geo":"BR","time":"today 12-m"},{"keyword":"java","geo":"BR","time":"today 12-m"},{"keyword":"/m/0120vr","geo":"BR","time":"today 12-m"},{"keyword":"/m/052tr","geo":"BR","time":"today 12-m"}],"category":0,"property":""}, {"exploreQuery":"date=today%2012-m,today%2012-m,today%2012-m,today%2012-m,today%2012-m&geo=BR,BR,BR,BR,BR&q=python,html,java,%2Fm%2F0120vr,%2Fm%2F052tr","guestPath":"https://trends.google.com.br:443/trends/embed/"}); </script> 
+    
+    <div class="col-100 footer">
+        <div class="content">
+            <div class="col-4">
+                <h3><b>Desenvolvimento de Sistema</b></h3>
+                
+                
+    </div>
+    <div class="col-100 footer-2">
+    <div class="content">
+       
+        <p>
+            Site criado para aula de desenvolvimento de sistemas - AC04 Turma de Banco de Dados
+        </p>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

@@ -57,7 +57,7 @@ ul {
     float: right;
 }
 .busca input{
-    background-image: url('../img/lupa.png');
+    background-image: url(../img/lupa.png);
     background-repeat: no-repeat;
     height: 20px;
     padding: 5px;
@@ -156,7 +156,7 @@ button.slick-next{
 
 .bloco-imagem img {
     margin: 0 auto;
-    width: 100%;
+    width: 85%;
     height: auto;
 }
 .bloco-imagem {
@@ -187,7 +187,7 @@ h3 {
 }
 
 .footer-2 {
-    background-image: url('../img/footer2.png');
+    background-image: url(../img/footer2.png);
     color: #c1c1c1;
     height: 90px;
 }

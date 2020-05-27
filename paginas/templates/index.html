@@ -1,11 +1,13 @@
+{%load static%}
+
+
 <!DOCTYPE html>
 <html>
 <head>
 
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" type="text/css" href="./css/estilo.css" >
-    <link rel="stylesheet" type="text/css" href="../CSS/slick"/>
+    <link rel="stylesheet" href="{%static 'css\estilo.css'%}">
 
     <title>DEVSIS_AC04</title>
 
@@ -16,7 +18,7 @@
         <main>
             <div class="header1">
                 <div class="logo">
-                    <a href="index.html"><img src="img\logo.jpg" width=160 height=60/></a>
+                    <a href="{%url 'inicio'%}"><img src="{%static 'img/logo.jpg'%}" width=160 height=60/></a>
                 </div>
                                 
             </div>
@@ -27,9 +29,10 @@
         <div class="header2">
             <div class="menu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Cursos.html">Curso</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="{% url 'inicio'%}">Home</a></li>
+                    <li><a href="{% url 'curso'%}">Curso</a></li>
+                    <li><a href="{% url 'contato'%}">Contato</a></li>
+                    <li><a href="{% url 'grafico'%}">Resultados</a></li>
                 </ul>
             </div>
             <div class="busca">
@@ -41,9 +44,9 @@
 
     <div class="col-100">
         <div class="slider-principal">
-            <img src="img\banner-areas-de-negocios.jpg"/>
-            <img src="img\banner-home.jpg"/>
-            <img src="img\banner-treinamento.jpg"/>            
+            <img src="{%static 'img/banner-areas-de-negocios.jpg'%}"/>
+            <img src="{%static 'img/banner-home.jpg'%}"/>
+            <img src="{%static 'img/banner-treinamento.jpg'%}"/>            
         </div>
     </div>        
 
@@ -84,15 +87,15 @@
 
     <div class="content" style="margin-left: 30%; float: left;">
         
-            <img src="img\excel.jpg" height="65px" width="100px">
+            <img src="{%static 'img/excel.jpg'%}" height="65px" width="100px">
         
-            <img src="img\java.jpg" height="80px" width="100px">
+            <img src="{% static 'img/java.jpg'%}" height="80px" width="100px">
         
-            <img src="img\HTML.png" height="80px" width="100px">
+            <img src="{% static 'img/HTML.png'%}" height="80px" width="100px">
         
-            <img src="img\python.png" height="80px" width="120px">
+            <img src="{% static 'img/python.png'%}" height="80px" width="120px">
        
-            <img src="img\sql1.png" height="75px" width="100px">
+            <img src="{% static 'img/sql1.png'%}" height="75px" width="100px">
     </div>
 
 <footer>
@@ -111,16 +114,16 @@
     </div>
     <div class="col-100 footer-2">
     <div class="content">
-
+       
         <p>
             Site criado para aula de desenvolvimento de sistemas - AC04 Turma de Banco de Dados
         </p>
     </div>
 
 </footer>
-<script type="text/javascript" src="./js/jquery.js"></script>
-<script type="text/javascript" src="./js/jquerymigrate.js"></script>
-<script type="text/javascript" src="./js/slick.min.js"></script>    
-<script type="text/javascript" src="./js/java.js"></script>
+<script type="text/javascript" src="{%static 'js/jquery.js'%}"></script>
+<script type="text/javascript" src="{%static 'js/jquerymigrate.js'%}"></script>
+<script type="text/javascript" src="{%static 'js/slick.min.js'%}"></script>    
+<script type="text/javascript" src="{%static 'js/java.js'%}"></script>
 </body>
 </html>

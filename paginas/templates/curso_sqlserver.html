@@ -1,22 +1,24 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
 
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" type="text/css" href="./css/estilo.css" >
-    <link rel="stylesheet" type="text/css" href="../CSS/slick"/>
+    <link rel="stylesheet" href="{%static 'css\estilo.css'%}">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/slick.css'%}"/>
 
- <title>Curso Server</title>
+ <title>Curso SQLServer</title>
 
 </head>
 <body>
 
-     <header class="menun-principal">
+    <header class="menun-principal">
         <main>
             <div class="header1">
                 <div class="logo">
-                    <a href="index.html"><img src="img\logo.jpg" width=160 height=60/></a>
+                     <a href="{%url 'inicio'%}"><img src='{%static 'img/logo.jpg'%}' width=160 height=60/></a>
                 </div>
                                 
             </div>
@@ -27,9 +29,10 @@
         <div class="header2">
             <div class="menu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Cursos.html">Curso</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="{% url 'inicio'%}">Home</a></li>
+                    <li><a href="{% url 'curso'%}">Curso</a></li>
+                    <li><a href="{% url 'contato'%}">Contato</a></li>
+                    <li><a href="{% url 'grafico'%}">Resultados</a></li>
                 </ul>
             </div>
             <div class="busca">
@@ -63,7 +66,7 @@
                             - Utilizar alertas e contadores</br>
                             - Schemas, Filegroups e muito mais!</strong></td>
                         
-                    <td rowspan="3"><h2><img src="img\sql1.png" width='300' height='150'></h2></td>
+                    <td rowspan="3"><h2><img src="{%static 'img/sql1.png'%}" width='300' height='150'></h2></td>
                 </tr>
             </table>    
             <p><h2>Descrição</h2></p>

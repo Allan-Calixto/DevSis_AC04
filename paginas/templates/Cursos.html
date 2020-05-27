@@ -1,11 +1,13 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html>
 <head>
 
     <meta charset="UTF-8">
 
-    <link rel="stylesheet" type="text/css" href="./css/estilo.css" >
-    <link rel="stylesheet" type="text/css" href="../CSS/slick"/>
+    <link rel="stylesheet" href="{%static 'css\estilo.css'%}">
+    <link rel="stylesheet" type="text/css" href="{%static 'css/slick.css'%}"/>
 
     <title>Cursos</title>
 
@@ -16,7 +18,7 @@
         <main>
             <div class="header1">
                 <div class="logo">
-                     <a href="index.html"><img src="img\logo.jpg" width=160 height=60/></a>
+                     <a href="{%url 'inicio'%}"><img src='{%static 'img/logo.jpg'%}' width=160 height=60/></a>
                 </div>
                                 
             </div>
@@ -27,9 +29,10 @@
         <div class="header2">
             <div class="menu">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Cursos.html">Curso</a></li>
-                    <li><a href="contato.html">Contato</a></li>
+                    <li><a href="{% url 'inicio'%}">Home</a></li>
+                    <li><a href="{% url 'curso'%}">Curso</a></li>
+                    <li><a href="{% url 'contato'%}">Contato</a></li>
+                    <li><a href="{% url 'grafico'%}">Resultados</a></li>
                 </ul>
             </div>
             <div class="busca">
@@ -40,35 +43,35 @@
     </main>
         <div class="content" style="margin-left: 15%; float: left;">
         <div class="col-3 bloco-texto bloco-imagem">
-            <a href='Cursos_Excel.html'><img src="img\excel.jpg"></a>
+            <a href="{%url 'cursoexcel'%}"><img src="{%static 'img/excel.jpg'%}"></a>
             <p><b>Excel</b></p>
             <p>O Microsoft Office Excel é um editor de planilhas produzido pela Microsoft para computadores que utilizam o sistema operacional Microsoft Windows, 
             além de computadores Macintosh da Apple Inc. e dispositivos móveis como o Windows Phone, Android ou o iOS.
             </p>
         </div>
         <div class="col-3 bloco-texto bloco-imagem">
-            <a href='java.html'><img src="img\java.jpg"></a>
+            <a href="{%url 'cursojava'%}"><img src="{%static 'img/java.jpg'%}"></a>
             <p><b>Java</b></p>
             <p>Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, 
             na empresa Sun Microsystems. Em 2008 o Java foi adquirido pela empresa Oracle Corporation
             </p>
         </div>
         <div class="col-3 bloco-texto bloco-imagem">
-            <a href='pagina_HTML.html'><img src="img\HTML.png"></a>
+            <a href="{%url 'cursohtml'%}"><img src="{%static 'img/HTML.png'%}"></a>
             <p><b>HTML</b></p>
             <p>HTML é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores. 
             A tecnologia é fruto da junção entre os padrões HyTime e SGML. HyTime é um padrão para a representação estruturada de hipermídia e conteúdo baseado em tempo.
             </p>
         </div>
         <div class="col-3 bloco-texto bloco-imagem">
-            <a href='curso_python.html'><img src="img\python.png"/></a>
+            <a href="{% url 'cursopython'%}"><img src="{%static 'img/python.png'%}"/></a>
             <p><b>Python</b></p>
             <p>Python é uma linguagem de programação de alto nível, interpretada, de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. 
             Foi lançada por Guido van Rossum em 1991.
             </p>
         </div>
         <div class="col-3 bloco-texto bloco-imagem">
-           <a href="curso_sqlserver.html"> <img src="img\sql1.png"></a>
+           <a href="{% url 'cursosqlserver'%}"> <img src="{%static 'img/sql1.png'%}"></a>
             <p><b>SQL Server</b></p>
             <p>Structured Query Language, ou Linguagem de Consulta Estruturada ou SQL, é a linguagem de pesquisa declarativa padrão para banco de dados relacional. 
             Muitas das características originais do SQL foram inspiradas na álgebra relacional.
@@ -86,7 +89,7 @@
     </div>
     <div class="col-100 footer-2">
     <div class="content">
-
+       
         <p>
             Site criado para aula de desenvolvimento de sistemas - AC04 Turma de Banco de Dados
         </p>
